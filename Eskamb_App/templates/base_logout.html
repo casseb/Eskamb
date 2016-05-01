@@ -34,11 +34,17 @@
         		<img alt="Brand" src="{% static "img/logo.png" %}"/>
       	  </a>
         </div>
-
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-left">
           	<div class="form-group">
-              <input type="text" placeholder="Pesquise aqui!" class="form-control input-lg">
+              <div class="input-group">
+      			<input type="text" class="form-control" placeholder="Pesquise aqui...">
+      			<span class="input-group-btn">
+        		<button class="btn btn-info" type="button">
+        			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Pesquisar
+        		</button>
+     			 </span>
+    	</div><!-- /input-group -->
             </div>
           </form>
           <form class="navbar-form navbar-right">
@@ -51,7 +57,7 @@
             <button type="submit" class="btn btn-success">
             	<span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Entrar
             </button>
-            <button type="" class="btn btn-warning"><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span> Cadastre-se</button>
+            <button class="btn btn-warning"><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span> Cadastre-se</button>
           </form>
         </div><!--/.navbar-collapse -->
         </div>
@@ -62,7 +68,7 @@
 	
 	 <div class="container">
 		<footer>
-        	<p>&copy; 2016 Company, Inc.</p>
+        	<p><a href="http://www.bycasseb.com">&copy; 2016 By Casseb.</a></p>
      	</footer>
      </div>
 

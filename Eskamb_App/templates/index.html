@@ -1,0 +1,79 @@
+{% extends "base_logout.html" %} 
+{% load static from staticfiles%}
+
+{% block conteudo%}
+
+ <div class="jumbotron">
+	<div class="container">
+		<div class="site-wrapper">
+	      	<div class="site-wrapper-inner">
+		        <div class="cover-container">
+					<div class="inner cover">
+						<div class="rows">
+							<div class="col-md-12">
+								<h1 class="text-center">O que é Eskamb?</h1>
+							</div>
+							<div class="col-md-3">
+								<img src="{% static "img/logo_grande.png" %}" class="img-responsive" alt="Logo Eskamb">
+							</div>
+ 							 <div class="col-md-9">
+	 							 <h3 class="cover-heading">
+		 							 Localize aqui o que você precisa ou o que você quer oferecer de serviços ou produtos 
+		 							 nesta ferramenta simplificada.
+		 							 <br><br>
+		 							 Afinal de contas porque usar dinheiro se você pode usar seu próprio trabalho?
+	 							 </h3>
+ 							 </div>
+ 							 
+ 							 <div class="col-md-12">
+ 							 	<br><br>
+								<h1 class="text-center">Porque Eskamb?</h1>
+							</div>
+ 							 <div class="col-md-9">
+	 							 <h3 class="cover-heading">
+		 							 Escambo era um tipo de comércio usado pelos nossos antepassados baseado em trocas de produtos ou serviços. Por que não podemos fazer o mesmo?
+		 							 <br><br>
+		 							 Afinal assim como eles não temos dinheiro!
+	 							 </h3>
+ 							 </div>
+ 							 <div class="col-md-3">
+								<img src="{% static "img/homem_caverna.png" %}" class="img-responsive" alt="Logo Eskamb">
+							</div>
+ 							 
+ 							 <div class="col-md-12">
+ 							 	<br><br>
+								<h1 class="text-center">Contate-nos<h1>
+							</div>
+							<div class="col-md-4">
+								<img src="{% static "img/logo_contato.png" %}" class="img-responsive" alt="Logo Eskamb">
+							</div>
+ 							 <div class="col-md-8">
+	 							 <h3 class="cover-heading">
+		 							 Quer entrar em contato para relatar algum problema, dúvida ou somente desabafar?
+		 							 <br><br>
+		 							 Basta preencher o formulário!
+	 							 </h3>
+	 							 <form class="form-horizontal">
+									  <div class="form-group">
+									      <input type="email" class="form-control" id="#" placeholder="Nome Completo...">
+									  </div>
+									  <div class="form-group">
+									      <input type="email" class="form-control" id="#" placeholder="E-mail...">
+									  </div>
+									  <div class="form-group">
+									  	<textarea class="form-control" rows="3" placeholder="Mensagem..."></textarea>
+									  </div>
+									  <div class="form-group">
+									      <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+									</div>
+								</form>
+ 							 </div>
+ 						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+{% endblock %}
