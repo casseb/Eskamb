@@ -1,0 +1,35 @@
+{% extends "base_cheia.html" %} 
+{% load static from staticfiles%}
+
+{% block conteudo%}
+
+ <div class="jumbotron">
+	<div class="container">
+		<div class="site-wrapper">.
+	      	<div class="site-wrapper-inner">
+		        <div class="cover-container">
+					<div class="inner cover">
+						<div class="rows">
+							<div class="col-md-6">
+								<img src="{% static "img/logo_muito_grande.png" %}" class="img-responsive" alt="Logo Eskamb">
+							</div>
+							<div class="col-md-6">
+								<div class="rows">
+									<div class="col-md-12">
+										<a href="#"><img src="{% static "img/botao_autonomo.png" %}" class="img-responsive" alt="Logo Eskamb"></a>
+										<br><br>
+									</div>
+									<div class="col-md-12">
+										<a href="#"><img src="{% static "img/botao_autonomo.png" %}" class="img-responsive" alt="Logo Eskamb"></a>
+									</div>
+								</div>
+							</div>
+ 						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+{% endblock %}

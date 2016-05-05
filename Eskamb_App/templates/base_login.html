@@ -36,7 +36,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-left">
-          	<div class="form-group">
+              <div class="input-group">
+    		<a href="#"><img src="{% static "img/foto_perfil.jpg" %}" alt="Foto_perfil" class="img-circle" height="50" width="50" style="margin-right: 20px;"></a>
+    	</div>
               <div class="input-group">
       			<input type="text" class="form-control" placeholder="Pesquise aqui...">
       			<span class="input-group-btn">
@@ -44,24 +46,16 @@
         			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Pesquisar
         		</button>
      			 </span>
+     			 
     	</div><!-- /input-group -->
-            </div>
           </form>
           <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Senha" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success" onClick="window.open('http://127.0.0.1:8000/home')" >
-            	<span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Entrar
-            </button>
-            <button class="btn btn-warning"><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span> Cadastre-se</button>
+            <button type="submit" class="btn btn-danger" onClick="window.open('http://127.0.0.1:8000')">
+            	Sair  <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+            </button> 
           </form>
         </div><!--/.navbar-collapse -->
         </div>
-      </div>
     </nav>
 
 	{% block conteudo %} {% endblock %}

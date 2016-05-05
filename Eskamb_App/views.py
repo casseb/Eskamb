@@ -7,5 +7,10 @@ def home(request):
     template = loader.get_template('index.html')
     return HttpResponse(template.render())
 
+def homeLogin(request):
+    template = loader.get_template('index_login.html')
+    return HttpResponse(template.render())
 
-
+def cadastro(request):
+    template = loader.get_template('cadastro.html')
+    return HttpResponse(template.render())

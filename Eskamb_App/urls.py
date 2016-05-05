@@ -4,4 +4,6 @@ from Eskamb_App import views
 
 urlpatterns = [
     url(r'^$', views.home),
+    url(r'^home$', views.homeLogin),
+    url(r'^cadastro$', views.cadastro),
 ]
