@@ -14,3 +14,15 @@ def homeLogin(request):
 def cadastro(request):
     template = loader.get_template('cadastro.html')
     return HttpResponse(template.render())
+
+def cadastroPessoaFisica(request):
+    template = loader.get_template('cadastro_pessoa_fisica.html')
+    return HttpResponse(template.render())
+
+def cadastroPessoaJuridica(request):
+    template = loader.get_template('cadastro_pessoa_juridica.html')
+    return HttpResponse(template.render())
+
+def meuPerfil(request):
+    template = loader.get_template('meu_perfil.html')
+    return HttpResponse(template.render())

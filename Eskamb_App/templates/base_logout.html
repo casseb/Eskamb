@@ -57,14 +57,16 @@
             <button type="submit" class="btn btn-success" onClick="window.open('http://127.0.0.1:8000/home')" >
             	<span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Entrar
             </button>
-            <button class="btn btn-warning"><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span> Cadastre-se</button>
+            <button type="submit" class="btn btn-warning" onClick="window.open('http://127.0.0.1:8000/cadastro')" >
+            	<span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span> Cadastre-se
+            </button>
           </form>
         </div><!--/.navbar-collapse -->
         </div>
       </div>
     </nav>
 
-	{% block conteudo %} {% endblock %}
+	{% block conteudo %}	{% endblock %}
 	
 	 <div class="container">
 		<footer>
