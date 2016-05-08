@@ -1,0 +1,107 @@
+{% extends "base_login.html" %} 
+{% load static from staticfiles%}
+
+{% block conteudo%}
+
+ <div class="jumbotron">
+	<div class="container">
+		<div class="site-wrapper">.
+	      	<div class="site-wrapper-inner">
+		        <div class="cover-container">
+					<div class="inner cover">
+						<div class="rows">
+							<div class="col-md-4">
+								<br><br>
+								<center><span class="glyphicon glyphicon-gift" aria-hidden="true" style="font-size:45px;"></span>
+								<h3>O que quero?</h3></center>
+								
+								<div class="table-responsive">
+  									<table class="table table-bordered table-condensed table-striped">
+  										<tr class="active">
+  											<td>Móveis - Mesa de Escritório</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  										<tr>
+  											<td>Móveis - Geladeira</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  										<tr>
+  											<td>Escolar - Curso de Inglês</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  										<tr>
+  											<td>Manutenção - Pintura</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  										<tr>
+  											<td>Manutenção - Encanamento</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  									</table>
+								</div>
+							</div>
+							<div class="col-md-4">
+							<br><br>
+								<center><span class="glyphicon glyphicon-pencil" aria-hidden="true" style="font-size:45px;"></span>
+								<h3>O que Faço?</h3></center>
+								
+								<div class="table-responsive">
+  									<table class="table table-bordered table-condensed table-striped">
+  										<tr class="active">
+  											<td>Informática - instalação de Servidores</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  										<tr>
+  											<td>Informática - Formatação</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  										<tr>
+  											<td>Manutenção - Elétrica</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  									</table>
+								</div>
+							</div>
+							<div class="col-md-4">
+							<br><br><br><br><br>
+								<div class="input-group" style="margin-top: 11px;">
+      								<input type="text" class="form-control" placeholder="Adicione novos">
+					      			<span class="input-group-btn">
+					        		<button class="btn btn-info" type="button">
+					        			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Pesquisar
+					        		</button>
+					     			 </span>
+    							</div>
+    							<div class="table-responsive">
+  									<table class="table table-bordered table-condensed table-striped">
+  										<tr class="active">
+  											<td>Informática - Configuração de Redes</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  										<tr>
+  											<td>Manutenção - Televisão</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  										<tr>
+  											<td>Escola - Aulas de Violão</td>
+  											<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+  										</tr>
+  									</table>
+								</div>
+								<br>
+								<form method="get" action="http://127.0.0.1:8000/novo_servico">
+									<button type="submit" class="btn btn-success btn-lg btn-block" >
+										<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 
+										Adicionar Novo
+									</button>
+								</form>
+							</div>
+ 						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+{% endblock %}

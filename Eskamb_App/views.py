@@ -26,3 +26,11 @@ def cadastroPessoaJuridica(request):
 def meuPerfil(request):
     template = loader.get_template('meu_perfil.html')
     return HttpResponse(template.render())
+
+def editarPerfil(request):
+    template = loader.get_template('editar_perfil.html')
+    return HttpResponse(template.render())
+
+def queroFaco(request):
+    template = loader.get_template('quero_faco.html')
+    return HttpResponse(template.render())
