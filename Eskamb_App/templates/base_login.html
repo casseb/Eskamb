@@ -30,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="http://127.0.0.1:8000/home">
         		<img alt="Brand" src="{% static "img/logo.png" %}"/>
       	  </a>
         </div>
@@ -39,16 +39,19 @@
               <div class="input-group">
     		<a href="http://127.0.0.1:8000/meu_perfil"><img src="{% static "img/foto_perfil.jpg" %}" alt="Foto_perfil" class="img-circle" height="50" width="50" style="margin-right: 20px;"></a>
     	</div>
+    	</form>
+              <form class="navbar-form navbar-right" method="get" action="http://127.0.0.1:8000/busca">
               <div class="input-group">
       			<input type="text" class="form-control" placeholder="Pesquise aqui...">
       			<span class="input-group-btn">
-        		<button class="btn btn-info" type="button">
+        		<button class="btn btn-info" type="submit">
         			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Pesquisar
         		</button>
      			 </span>
      			 
     	</div><!-- /input-group -->
-          </form>
+    	</form>
+          
           <form class="navbar-form navbar-right" method="get" action="http://127.0.0.1:8000">
             <button type="submit" class="btn btn-danger">
             	Sair  <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>

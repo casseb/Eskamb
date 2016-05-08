@@ -11,4 +11,6 @@ urlpatterns = [
     url(r'^meu_perfil$', views.meuPerfil),
     url(r'^editar_perfil$', views.editarPerfil),
     url(r'^quero_faco$', views.queroFaco),
+    url(r'^novo_servico$', views.novoServico),
+    url(r'^busca$', views.busca),
 ]

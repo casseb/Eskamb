@@ -34,3 +34,11 @@ def editarPerfil(request):
 def queroFaco(request):
     template = loader.get_template('quero_faco.html')
     return HttpResponse(template.render())
+
+def novoServico(request):
+    template = loader.get_template('novo_servico.html')
+    return HttpResponse(template.render())
+
+def busca(request):
+    template = loader.get_template('busca.html')
+    return HttpResponse(template.render())
