@@ -25,3 +25,20 @@ class Contato(models.Model):
     
     def __str__(self):
         return self.conteudo
+    
+#######################################################
+
+class Usuario(models.Model):
+    email = models.CharField(max_length = 100)
+    senha = models.CharField(max_length = 100)
+    contato = models.ForeignKey(Contato)
+    endRua = models.CharField(max_length = 100)
+    endNumero = models.IntegerField()
+    endBairro = models.CharField(max_length = 100)
+    endCidade = models.CharField(max_length = 100)
+    endEstado = models.CharField(max_length = 2)
+    endCep = models.CharField(max_length = 100)
+    
+    def __str__(self):
+        return self.email
+    
