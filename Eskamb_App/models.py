@@ -41,4 +41,26 @@ class Usuario(models.Model):
     
     def __str__(self):
         return self.email
+
+#######################################################
+
+class Material(models.Model):
+    nome = models.CharField(max_length = 100)
+    categoria = models.ForeignKey(Categoria)
+    usuario = models.ForeignKey(Usuario)
+    aprovado = models.CharField(max_length = 2)
+    
+    def __str__(self):
+        return self.nome
+    
+#######################################################
+
+class UsuarioMaterial(models.Model):
+    usuario = models.ForeignKey(Usuario)
+    material = models.ForeignKey(Material)
+    quero = models.CharField(max_length = 2)
+    faco = models.CharField(max_length = 2)
+    
+    def __str__(self):
+        return self.usuario.email+"-"+self.material.nome
     
