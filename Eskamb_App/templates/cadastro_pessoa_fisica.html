@@ -14,84 +14,13 @@
 									alt="Logo Eskamb">
 							</div>
 							<div class="col-md-6">
-								<form method="get" action="http://127.0.0.1:8000/home">
-									<div class="rows">
-										<div class="col-md-12">
-											<div class="form-group">
-												<input type="email" class="form-control"
-													placeholder="E-mail">
-											</div>
-											<div class="form-group">
-												<input type="password" class="form-control"
-													placeholder="Senha">
-											</div>
-											<div class="form-group">
-												<input type="password" class="form-control"
-													placeholder="Repetir Senha">
-											</div>
-
-											<br>
-											<br>
-
-											<div class="form-group">
-												<input type="text" class="form-control"
-													placeholder="Nome Completo">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<input type="text" class="form-control" placeholder="Cep">
-											</div>
-
-										</div>
-										<div class="col-md-6"></div>
-										<div class="col-md-12">
-											<div class="form-group">
-												<input type="text" class="form-control"
-													placeholder="Rua">
-											</div>
-											<div class="form-group">
-												<input type="text" class="form-control"
-													placeholder="Bairro">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<input type="text" class="form-control"
-													placeholder="Cidade">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<select class="form-control">
-												  <option>SP</option>
-												  <option>RJ</option>
-												  <option>MG</option>
-												  <option>PE</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-md-6">
-										<br><br>
-											<div class="form-group">
-												<input type="text" class="form-control"
-													placeholder="Telefone">
-											</div>
-										</div>
-										<div class="col-md-6">
-										<br><br>
-											<div class="form-group">
-												<select class="form-control">
-												  <option>Médio Completo</option>
-												  <option>Médio/Técnico Completo</option>
-												  <option>Superior</option>
-												</select>
-											</div>
-										</div>
+								<form method="POST">{% csrf_token %}
+										{{ formUsuario.as_ul }}
+										{{ formContato.as_ul }}
+										{{ formPessoa.as_ul }}
 										<div class="col-md-12">
 											<button type="submit" class="btn btn-success btn-block">Cadastrar</button>
 										</div>
-									</div>
 								</form>
 							</div>
 						</div>

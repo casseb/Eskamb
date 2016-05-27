@@ -64,3 +64,33 @@ class UsuarioMaterial(models.Model):
     def __str__(self):
         return self.usuario.email+"-"+self.material.nome
     
+#######################################################
+
+class PessoaJuridica(models.Model):
+    usuario = models.OneToOneField(
+        Usuario,
+        on_delete=models.CASCADE,
+        primary_key=True
+    )
+    NomeFantasia = models.CharField(max_length = 100)
+    razaoSocial = models.CharField(max_length = 100)
+    cnpj = models.CharField(max_length = 100)
+    porte = models.CharField(max_length = 2)
+    ramoAtividade = models.CharField(max_length = 2)
+    
+    def __str__(self):
+        return self.NomeFantasia
+
+#######################################################
+
+class PessoaFisica(models.Model):
+    usuario = models.OneToOneField(
+        Usuario,
+        on_delete=models.CASCADE,
+        primary_key=True
+    )
+    nomeCompleto =  models.CharField(max_length = 100)
+    formacao = models.ForeignKey(Formacao)
+    
+    def __str__(self):
+        return self.nomeCompleto

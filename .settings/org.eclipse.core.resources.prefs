@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+encoding//Eskamb_App/migrations/0001_initial.py=utf-8
+encoding//Eskamb_App/migrations/0002_formacao.py=utf-8
+encoding//Eskamb_App/migrations/0003_contato.py=utf-8
 encoding//Eskamb_App/migrations/0005_material.py=utf-8
+encoding//Eskamb_App/migrations/0007_pessoajuridica.py=utf-8
